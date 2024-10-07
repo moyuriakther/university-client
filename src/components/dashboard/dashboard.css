@@ -1,0 +1,36 @@
+.dashboard-container {
+    margin: 20px;
+    background-color: #f0f2f5; /* Light background for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .dashboard-card {
+    transition: transform 0.3s ease; /* Animation for card hover */
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center; /* Center align text in cards */
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .chart-card {
+    border-radius: 8px;
+    overflow: hidden; /* Prevent overflow */
+    transition: box-shadow 0.3s ease; /* Animation for chart hover */
+  }
+  
+  .chart-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+  
+  h2 {
+    text-align: center; /* Center align heading */
+    margin-bottom: 20px; /* Space below heading */
+    font-weight: 600; /* Bold font weight */
+  }
+  
