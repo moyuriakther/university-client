@@ -15,7 +15,7 @@ export const enrollCourseApi = apiSlice.injectEndpoints({
           method: "POST",
           body: data,
         }),
-        // invalidatesTags: ["Bikes"],
+        invalidatesTags: ["course", "student", "faculty"],
       }),
   }),
 });

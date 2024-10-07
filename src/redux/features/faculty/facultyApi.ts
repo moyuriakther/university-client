@@ -7,7 +7,7 @@ export const facultyApi = apiSlice.injectEndpoints({
         url: `/faculty`,
         method: "GET",
       }),
-    //   providesTags: [],
+      providesTags: ["faculty"],
     }),
     createFaculty: builder.mutation({
         query: (data) => ({
@@ -15,7 +15,7 @@ export const facultyApi = apiSlice.injectEndpoints({
           method: "POST",
           body: data,
         }),
-        // invalidatesTags: ["Bikes"],
+        invalidatesTags: ["faculty"],
       }),
   }),
 });

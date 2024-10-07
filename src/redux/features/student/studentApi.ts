@@ -7,7 +7,7 @@ export const studentApi = apiSlice.injectEndpoints({
         url: `/student`,
         method: "GET",
       }),
-    //   providesTags: [],
+      providesTags: ["student"],
     }),
     createStudent: builder.mutation({
         query: (data) => ({
@@ -15,29 +15,29 @@ export const studentApi = apiSlice.injectEndpoints({
           method: "POST",
           body: data,
         }),
-        // invalidatesTags: ["Bikes"],
+        invalidatesTags: ["student"],
       }),
       updateCourseGrade: builder.mutation({
         query: ({ email, data }) => (
-          // console.log(data, bikeId),
+          
           {
             url: `/student/${email}/grade`,
             method: "PUT",
             body: data,
           }
         ),
-        // invalidatesTags: ["Bikes"],
+        invalidatesTags: ["student"],
       }),
       updateEvent: builder.mutation({
         query: ({ email, data }) => (
-          // console.log(data, bikeId),
+          
           {
             url: `/student/${email}/event`,
             method: "PATCH",
             body: data,
           }
         ),
-        // invalidatesTags: ["Bikes"],
+        invalidatesTags: ["student"],
       }),
   }),
 });
